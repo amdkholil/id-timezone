@@ -1,4 +1,4 @@
-import 'package:indonesian_timezone/indonesian_time_zone.dart';
+import 'package:indonesian_timezone/indonesian_timezone.dart';
 
 void main() {
   DateTime dateTime = DateTime.now();
