@@ -29,11 +29,17 @@ print(formated); // 01 Jan 2023 13:00
 
 ```
 
----
+- Function & methods
+
 | Funtion | Param | Return | Description |
 | --- | --- | ---- | ---- |
 | `.toWIB()` | - | `DateTime` | change to WIB Timezone |
 | `.toWITA()` | - | `DateTime` | change to WITA Timezone |
 | `.toWIT()` | - | `DateTime` | change to WIT Timezone |
 | `.format(String)` | `String` | `String` | change `IdTimezone`/`DateTime` to `String` with custom format |
+| `.parse(String)` | `String` datetime | `IdTimezone` | parse `String` to `IdTimezone` class|
+| `.setUTC(UTC)` | `UTC` enum | `IdTimezone` | set Timezone in UTC format
+| `.fromWIB(DateTime)` | `DateTime` in WIB/UTC+7 | `IdTimezone` | parse `DateTime` WIB/UTC+7 to `IdTimezone` class |
+| `.fromWITA(Datetime)` | `DateTime` in WITA/UTC+8 | `IdTimezone` | parse `DateTime` WITA/UTC+8 to `IdTimezone` class |
+| `.fromWIT(DateTime)` | `DateTime` in WIT/UTC+9` | `IdTimezone` | parse `DateTime` WIT/UTC+9 to `IdTimezone` class |
 

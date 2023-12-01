@@ -19,6 +19,7 @@ class IdTimezone {
     }
   }
 
+  /// change to UTC+0
   DateTime? toUTC() {
     try {
       double diff = _diffWithUtc();
@@ -38,7 +39,7 @@ class IdTimezone {
 
   /// change to WIB
   ///
-  /// WIB = UTC + 7
+  /// WIB = UTC+7
   DateTime? toWIB() {
     try {
       const int zone = 7;
@@ -65,7 +66,7 @@ class IdTimezone {
   }
 
   /// change to WITA
-  /// WITA = UTC + 8
+  /// WITA = UTC+8
   DateTime? toWITA() {
     try {
       const int zone = 8;
@@ -92,7 +93,7 @@ class IdTimezone {
   }
 
   /// change to WIT
-  /// WIT = UTC + 9
+  /// WIT = UTC+9
   DateTime? toWIT() {
     try {
       const int zone = 9;
@@ -150,6 +151,7 @@ class IdTimezone {
   /// example: [format]  with 'yyyy-MM-dd HH:mm:ss'
   String? format(String? format) {
     try {
+      Intl.defaultLocale = 'id_ID';
       if (date == null) {
         return null;
       }
@@ -171,6 +173,7 @@ class IdTimezone {
     }
   }
 
+  /// helper to get diff datetime with UTC
   double _diffWithUtc() {
     switch (utc) {
       case UTC.zero:

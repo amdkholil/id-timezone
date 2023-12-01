@@ -32,7 +32,7 @@ void main() {
   print(idTimeZone.toWIB());
 
   // set utc to UCT+6
-  dateTimeStr = "2023-01-01 06:00:00";
+  dateTimeStr = "2023-10-01 06:00:00";
   idTimeZone.parse(dateTimeStr).setUTC(UTC.plus06);
   print(idTimeZone.toWIB());
 
@@ -41,6 +41,6 @@ void main() {
   print(inWITstr);
 
   DateTime? idTz = IdTimezone().parse(dateTimeStr).toWIB();
-  String? formated = idTz?.format("dd MMM yyyy HH:mm");
+  String? formated = idTz?.format("dd MMM yyyy W HH:mm");
   print(formated);
 }
