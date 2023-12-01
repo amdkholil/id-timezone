@@ -25,7 +25,7 @@ String? inWIBStr = inWIB?.format("dd MMM yyyy HH:mm");
 String dateTimeStr = "2022-01-01 10:00:00";
 DateTime? idTz = IdTimezone().parse(dateTimeStr).toWIB();
 String? formated = idTz?.format("dd MMM yyyy HH:mm");
-print(formated); // 01 Jan 2023 13:00
+print(formated); // 01 Jan 2022 13:00
 
 ```
 
@@ -41,5 +41,5 @@ print(formated); // 01 Jan 2023 13:00
 | `.setUTC(UTC)` | `UTC` enum | `IdTimezone` | set Timezone in UTC format
 | `.fromWIB(DateTime)` | `DateTime` in WIB/UTC+7 | `IdTimezone` | parse `DateTime` WIB/UTC+7 to `IdTimezone` class |
 | `.fromWITA(Datetime)` | `DateTime` in WITA/UTC+8 | `IdTimezone` | parse `DateTime` WITA/UTC+8 to `IdTimezone` class |
-| `.fromWIT(DateTime)` | `DateTime` in WIT/UTC+9` | `IdTimezone` | parse `DateTime` WIT/UTC+9 to `IdTimezone` class |
+| `.fromWIT(DateTime)` | `DateTime` in WIT/UTC+9 | `IdTimezone` | parse `DateTime` WIT/UTC+9 to `IdTimezone` class |
 
