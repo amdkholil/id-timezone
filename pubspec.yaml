@@ -1,10 +1,10 @@
 name: indonesian_timezone
 description: To make it easier to convert time into the form of Indonesian time zones (WIB, WITA, & WIT)
 version: 1.0.0
-repository: https://github.com/my_org/my_repo
+repository: https://github.com/amdkholil/id-timezone
 
 environment:
-  sdk: ^3.2.0
+  sdk: ^3.0.0
 
 # Add regular dependencies here.
 dependencies:
