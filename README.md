@@ -1,6 +1,6 @@
 ## Indonesian Timezone
 
-Simple package to cange and format `Datetime` or parsing `String` to `Datetime` to Indonesian Timezone (WIB, WITA, WIT)
+Simple package to change and format `Datetime` or parsing `String` to `Datetime` to Indonesian Timezone (WIB, WITA, WIT)
 
 - change `Datetime` to Indonesian Timezone & format it with easy
 
